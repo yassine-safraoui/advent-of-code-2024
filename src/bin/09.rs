@@ -6,12 +6,12 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 use utf8_chars::BufReadCharsExt;
 
-const DAY: &str = "09"; // TODO: Fill the day
+const DAY: &str = "09";
 const INPUT_FILE: &str = concatcp!("input/", DAY, ".txt");
 
 const TEST: &str = "\
 2333133121414131402
-"; // TODO: Add the test input
+";
 
 fn main() -> Result<()> {
     start_day(DAY);
@@ -20,7 +20,6 @@ fn main() -> Result<()> {
     println!("=== Part 1 ===");
 
     fn part1<R: BufRead>(mut reader: R) -> Result<usize> {
-        // TODO: Solve Part 1 of the puzzle
         let mut result = 0;
         let mut blocks: Vec<Option<usize>> = Vec::new();
         let mut reading_block = true;
@@ -93,7 +92,6 @@ fn main() -> Result<()> {
     }
 
     fn part2<R: BufRead>(mut reader: R) -> Result<usize> {
-        // TODO: Solve Part 1 of the puzzle
         let mut result = 0;
         let mut blocks_array: Vec<Option<usize>> = Vec::new();
         let mut reading_block = true;
