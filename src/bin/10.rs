@@ -18,7 +18,7 @@ const TEST: &str = "\
 32019012
 01329801
 10456732
-"; // TODO: Add the test input
+";
 
 fn main() -> Result<()> {
     start_day(DAY);
@@ -109,8 +109,7 @@ fn main() -> Result<()> {
         }
         Ok(result)
     }
-
-    // TODO: Set the expected answer for the test input
+    
     assert_eq!(36, part1(BufReader::new(TEST.as_bytes()))?);
 
     let input_file = BufReader::new(File::open(INPUT_FILE)?);
